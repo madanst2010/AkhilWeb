@@ -5,10 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet"  href="C:\Users\AKHIL\Desktop\Incredible India/style.css">
-	<style>
-		
-
-body {margin:0;font-family:Arial}
+	
+<style>
+	body {margin:0;font-family:Arial}
 
 .topnav {
   overflow: hidden;
@@ -54,7 +53,7 @@ body {margin:0;font-family:Arial}
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 257px;
+  min-width: 170px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -170,7 +169,7 @@ img {vertical-align: middle;}
 
 .rest {
     flex: 54%;
-    background-color: white;
+    background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
     padding: 16px;
 
 }
@@ -191,65 +190,257 @@ h2 {
   font-size: 34px;
 }
 
-
 .moh {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding: 0;
+  margin: 0;
   color: darkslateblue;
-  padding-bottom: 1000px;
+  display: flex;
+}
+
+
+
+
+
+body {
+  color: #333;
+  font-family: "Raleway", Arial, Helvetica, serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
+}
+
+
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+.cardBox:hover .card {
+  transform: rotateY( 180deg);
+}
+
+.card {
+  width: 100%;
+  background-repeat:no-repeat;
+  background-size: 100%;
+  background-position:top left;
+  position: relative;
+  cursor: default;
+height: 300px;
+transform-style: preserve-3d;
+transition: transform 0.4s ease 0s;
+
+-webkit-animation: giro 1s 1;
+animation: giro 1s 1;
+}
+
+.card p {
+  margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
+  transform: rotateY( 180deg);
+}
+
+.card .back a {
+  padding: 0.3em 0.5em;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+.cardBox:nth-child(1) .card .back {
+  background: cornflowerblue;
+}
+
+.cardBox:nth-child(2) .card .back {
+  background: orange;
+}
+
+.cardBox:nth-child(3) .card .back {
+  background: yellowgreen;
+}
+
+.cardBox:nth-child(4) .card .back {
+  background: tomato;
+}
+
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+      height: 260px;
+  }
+}
+.align {
+  
+  background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;;
+}
+.footer1 {
+ display: content;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color:  skyblue;
+  color: white;
+  text-align: center;
+
+
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  
 }
 	</style>
 </head>
 <body>
-
 
 <div class="topnav" id="myTopnav">
   <a href="#" class="active">Home</a>
   <a href="#">News</a>
   <a href="#">Destinations</a>
   <div class="dropdown">
-    <button class="dropbtn">States and Union Territories
+    <button class="dropbtn">States
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Andaman And Nicobar</a>
-      <a href="#">Andhra Pradesh</a>
-      <a href="#">Arunachal Pradesh</a>
-      <a href="#">Assam</a>
-      <a href="#">Bihar</a>
-      <a href="#">Chandigarh</a>
-      <a href="#">Chhattisgarh</a>
-      <a href="#">Dadar And Nagar Haveli</a>
-      <a href="#">Daman And Diu</a>
-      <a href="#">Delhi</a>
-      <a href="#">Goa</a>
-      <a href="#">Gujarat</a>
-      <a href="#">Harayana</a>
-      <a href="#">Himachal Pradesh</a>
-      <a href="#">Jammu And Kashmir</a>
-      <a href="#">Jharkhand</a>
-      <a href="#">Karnataka</a>
-      <a href="#">Kerala</a>
-      <a href="#">Ladakh</a>
-      <a href="#">Lakshdaweep</a>
-      <a href="#">Madhya Pradesh</a>
-      <a href="#">Maharastra</a>
-      <a href="#">Manipur</a>
-      <a href="#">Meghalaya</a>
-      <a href="#">Mizoram</a>
-      <a href="#">Nagaland</a>
-      <a href="#">Odisha</a>
-      <a href="#">Puducherry</a>
-      <a href="#">Rajasthan</a>
-      <a href="#">Sikkim</a>
-      <a href="#">Tamil Nadu</a>
-      <a href="#">Telangana</a>
-      <a href="#">Tripura</a>
-      <a href="#">Uttar Pradesh</a>
-      <a href="#">Uttarakhand</a>
-      <a href="#">West Bengal</a>
+      <a href="#">North India</a>
+      <a href="#">South India</a>
+      <a href="#">Central India</a>
+      <a href="#">East India</a>
+      <a href="#">Western India</a>
     </div>
-  </div>  
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Union Territories
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="#">Andaman And Nicobar</a>
+        <a href="#">Chandigarh</a>
+        <a href="#">Daman And Diu</a>
+        <a href="#">Dadar And Nagar Haveli</a>
+        <a href="#">Lakshdaweep</a>
+        <a href="#">Pondicherry</a>
+      <a href="#">National Capital Territory of Delhi</a>
+    </div>
+  </div> 
   <a href="contact.html">Contact Me</a>
   <a href="#about">About</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -273,23 +464,23 @@ h2 {
 </div>
 <div class="row">
     <div class="side">
-     
-  
 
   <div class="center">
 		<h1><b><strong>Web Developer:</strong></b></h1>
 		<center><img src="img1.jpg" alt="Nature" class="Responsive"  class="img-fluid"></center></br>
 		<p><b>
-			Currently  Works At Software Developer</b>
-			</div>
+      Currently  Works At Software Developer.</b>
+      </p>
+   
+      </div>
     </div>
   
        
-  <div class="rest" style="height:410px;">
+  <div class="rest">
     <h2><b><strong><center>Incredible India</center></strong></b></h2>
 
     <img src="india1234.jpg"  alt="Nature" class="responsive"  width="1000" height="200">
-    <div class="moh">
+   <div class="moh">
     <p> """As the 7th largest country in the world, India is one of the oldest civilizations in the world
          with a kaleidoscopic variety and rich cultural heritage.
          It has achieved all-round socio-economic progress during 
@@ -299,31 +490,88 @@ h2 {
           the few nations to have gone into outer space to conquer
           nature for the benefit of the people.
           It covers an area of 32,87,263 sq.km, extending from the snow-covered Himalayan 
-          heights to the tropical rain forests of the south."""" </p>  
-           </div>
-	 </div>  
-  </div>
+          heights to the tropical rain forests of the south."""" </p>
+        </div>
+      </div> 
+</div>
 </div>
 
 
+<div class="boxesContainer">
 
+    <div class="cardBox">
+      <div class="card" style="background-image: url('histo.jpg')">
+        <div class="front">
+          <h3>Heritage</h3>
+          <p>Ancient History Comes Alive</p>
+          <strong>&#x21bb;</strong>
+        </div>
+        <div class="back">
+          <h3>Back Side One</h3>
+          <p>Content in card one</p>
+          <a href="#">Button 1</a>
+        </div>
+      </div>
+    </div>
+    <div class="cardBox">
+      <div class="card" style="background-image: url('haridwr.jpg')">
+        <div class="front">
+          <h3>Spritual</h3>
+          <p>Celebration of Diverse Beliefs</p>
+          <strong>&#x21bb;</strong>
+        </div>
+        <div class="back">
+          <h3>Back Side Two</h3>
+          <p>Content in card two</p>
+          <a href="#">Button 2</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="cardBox">
+      <div class="card" style="background-image: url('nature.jpg')">
+        <div class="front">
+          <h3>Nature</h3>
+          <p>Hover to flip</p>
+          <strong>&#x21bb;</strong>
+        </div>
+        <div class="back">
+          <h3>Back Side Three</h3>
+          <p>Content in card three</p>
+          <a href="#">Button 3</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="cardBox">
+      <div class="card" style="background-image: url('destiny.jpg')">
+        <div class="front">
+          <h3>Popular Destinations</h3>
+          <p>Hover to flip</p>
+          <strong>&#x21bb;</strong>
+        </div>
+        <div class="back">
+          <h3>Back Side Four</h3>
+          <p>Content in card four</p>
+          <a href="#">Button 4</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="align">
+    <h2><center>1 </center></h2>
+  
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="footer1" style="width:100%">
+  <p>Follow On</p>
+  
+  <a href="https://www.facebook.com/akhil.aasth.com.11" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/ShahniAkhil?s=08" class="fa fa-twitter"></a>
+  <a href=" https://www.linkedin.com/in/akhil-shahni-758a23185" class="fa fa-linkedin"></a>
+  <a href="https://instagram.com/akhil_b2_?igshid=1ixmnq2and6wg" class="fa fa-instagram"></a>
+</div>
 
 
 <script>
@@ -359,11 +607,6 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";  
 }
 </script>
-
-
-
-
-
 
 
 </body>
